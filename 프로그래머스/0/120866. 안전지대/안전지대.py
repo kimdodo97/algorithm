@@ -13,8 +13,10 @@ def solution(board):
                     y = j - move[1]
                     if x>=0 and y>=0 and x<n and y<n:
                         result[x][y] = -1
+                        
     for i in range(n):
         for j in range(n):
             if result[i][j] == 0:
                 answer += 1
+                
     return answer
